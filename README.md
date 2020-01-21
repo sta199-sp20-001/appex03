@@ -1,14 +1,11 @@
-# STA 199 :: Application Exercise 02
+# STA 199 :: Application Exercise 03
 
 ## Learning objectives
 
-- Version control using git and GitHub
-- Working with package ggplot2
-  - create scatter plots
-  - create histograms
-  - understand aesthetics
+- Working with package `dplyr`
+  - pipe operator
+  - data wrangling
 
 ## References
 
-1. SWAPI - The Star Wars API . (2020). Swapi.co. 
-   Retrieved from https://swapi.co/
+1. Bicycle Crashes. (2020). Chapelhillopendata.org. Retrieved 21 January 2020, from https://www.chapelhillopendata.org/explore/dataset/bicycle-crash-data-chapel-hill-region/information/?disjunctive.city&disjunctive.county&disjunctive.crashday&disjunctive.crashsevr&disjunctive.crashyear
