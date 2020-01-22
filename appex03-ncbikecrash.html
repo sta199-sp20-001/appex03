@@ -2781,26 +2781,18 @@ div.tocify {
 
 <div id="getting-started" class="section level1">
 <h1>Getting started</h1>
-<div id="clone-assignment-repo" class="section level2">
-<h2>Clone assignment repo</h2>
 <ol style="list-style-type: decimal">
-<li><p>Go to your repo <code>appex03-[github_name]</code> on GitHub.</p></li>
-<li><p>Click on the green <strong>Clone or download</strong> button, select <strong>Use HTTPS</strong> (this might already be selected by default, and if it is, you’ll see the text <strong>Clone with HTTPS</strong> as in the image below). Click on the clipboard icon to copy the repo URL.</p></li>
-<li><p>Go to RStudio Cloud and into the STA 199 course workspace. Create a <strong>New Project from Git Repo</strong>. You will need to click on the down arrow next to the <strong>New Project</strong> button to see this option.</p></li>
-<li><p>Copy and paste the URL of your assignment repo (done in step 2) into the dialog box.</p></li>
-<li><p>Click OK, and you should see the contents from your GitHub repo in the <code>Files</code> pane in RStudio.</p></li>
-</ol>
-</div>
-<div id="configure-git" class="section level2">
-<h2>Configure git</h2>
-<p>Type (copy) the following lines of code in the <strong>Console</strong> in RStudio - filling in your name and email address.</p>
+<li><p>Clone your repo <code>appex03-[github_name]</code> on GitHub to create a new project in RStudio Cloud under the STA 199 class space.</p></li>
+<li><p>Configure git</p>
 <pre class="r"><code>library(usethis)
-use_git_config(user.name=&quot;your name&quot;, user.email=&quot;your email&quot;)</code></pre>
-</div>
+use_git_config(user.name=&quot;your name&quot;, user.email=&quot;your email&quot;)</code></pre></li>
+</ol>
 </div>
 <div id="packages-and-data" class="section level1">
 <h1>Packages and Data</h1>
+<p>Let’s load package <code>tidyverse</code>.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
+<p>To load the data we will use function <code>read_csv2()</code> and save the data frame as an object named <code>ncbikecrash</code>.</p>
 <pre class="r"><code>ncbikecrash &lt;- read_csv2(&quot;data/nc_bike_crash.csv&quot;)</code></pre>
 </div>
 <div id="tasks" class="section level1">

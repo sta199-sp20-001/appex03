@@ -18,40 +18,25 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 
 # Getting started
 
-## Clone assignment repo
+1. Clone your repo `appex03-[github_name]` on GitHub to create a new project
+   in RStudio Cloud under the STA 199 class space.
 
-1. Go to your repo `appex03-[github_name]` on GitHub.
-
-2. Click on the green **Clone or download** button, select **Use HTTPS** 
-   (this might already be selected by default, and if it is, you'll see the 
-   text **Clone with HTTPS** as in the image below). 
-   Click on the clipboard icon to copy the repo URL.
-
-3. Go to RStudio Cloud and into the STA 199 course workspace. 
-   Create a **New Project from Git Repo**. You will need to click on the down 
-   arrow next to the **New Project** button to see this option.
-
-4. Copy and paste the URL of your assignment repo (done in step 2) into 
-   the dialog box.
-
-5. Click OK, and you should see the contents from your GitHub repo in the 
-   `Files` pane in RStudio. 
-
-## Configure git
-
-Type (copy) the following lines of code in the **Console** in RStudio - 
-filling in your name and email address.
-
-```{r config-git-ex, eval=FALSE}
-library(usethis)
-use_git_config(user.name="your name", user.email="your email")
-```
+2. Configure git
+      ```{r config-git-ex, eval=FALSE}
+      library(usethis)
+      use_git_config(user.name="your name", user.email="your email")
+      ```
 
 # Packages and Data
+
+Let's load package `tidyverse`.
 
 ```{r load-packages}
 library(tidyverse)
 ```
+
+To load the data we will use function `read_csv2()` and save the data frame
+as an object named `ncbikecrash`.
 
 ```{r}
 ncbikecrash <- read_csv2("data/nc_bike_crash.csv")
